@@ -1,0 +1,174 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.caja {
+   width: 100%;
+   max-width: 100%;
+   text-align: center;
+   margin: auto;
+   background-color: #FFFFFF;
+   border-style: solid;
+   border-color: blue;
+   display: flex;
+   flex-flow: column wrap;
+   
+}
+
+.principal {
+	width: 100%;
+	color: white;
+	background: transparent url("fondoindex.jpg") no-repeat scroll center center / cover;
+	border-style: solid;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+}
+
+
+/*-------------------------------------------------------------- CABECERA----------------------------------------------------------------------------------*/
+.pcabecera{
+   height: 70px;
+   width: 100%;
+   display:flex;
+   flex-flow: row wrap;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.plogo
+{
+   width: 20%;
+}
+
+.plogo a
+{
+	text-decoration: none;
+	color: white;
+	font-family: 'Playfair Display', serif;
+	font-size:35px;
+	font-weight: bold;
+}
+
+.pmenu
+{
+	width: 40%;
+    display:flex;
+    flex-flow: row nowrap;
+	font-weight: bold;
+}
+
+.pmenulis
+{
+	width:100%;
+	display: flex;
+	list-style-type: none;
+	align-items: stretch;
+}
+
+.pmenulis li
+{
+	display: flex;
+	width: 100%;
+	text-style: none;	
+	text-align:center;
+}
+
+.pmenulis li a
+{
+	width:100%;
+	text-decoration: none;
+	color: white;
+}
+
+.pmenu li a:hover:not(.active) {
+    color: #7FFFD4;
+	transition: 1.0s;
+}
+
+.plogo a:hover:not(.active) {
+    color: #7FFFD4;
+	transition: 1.0s;
+}
+
+/*-------------------------------------------------------------- CENTRAL ----------------------------------------------------------------------------------*/
+
+
+.pcentral{
+	height: 500px;
+    width: 100%;
+	display:flex;
+	flex-flow: column wrap;
+	align-items: center;
+
+}
+
+.ph1{
+	margin-top:120px;
+	font-family: 'Playfair Display', serif;
+	font-size:80px;
+	font-weight: bold;
+}
+
+.ph2{
+	width:100%;
+}
+
+.pa{
+	margin: 50px;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:25px;
+	padding-right:25px;
+	background-color: #17B794;
+	text-style: none;
+	text-decoration: none;
+	color: white;
+	border-radius: 3px;
+	font-weight: bold;
+
+}
+
+.pa:hover:not(.active) {
+    background-color: #7FFFD4;
+	transition: 1.0s;
+}
+
+
+
+/*-------------------------------------------------------------- PIE ----------------------------------------------------------------------------------*/
+
+.pie{
+   width: 100%;
+   height: 100px;
+   	border-style: solid;
+    border-color: purple;
+	background-color:#17B794;
+}
+
+
+@media screen and (max-width: 800px) {
+	
+	   .principal{
+   	flex-direction:column;
+   	width: 100%;
+   	align-content: center; 
+   }
+   
+   
+	
+}
+/*0
+@media screen and (max-width: 600px) {
+	.caja{
+		width: 100%;
+	}
+	
+		.cabecera {
+      height: 200px;	
+	}
+
+}
+*/
